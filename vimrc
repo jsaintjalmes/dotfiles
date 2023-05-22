@@ -7,10 +7,11 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" plugins listed here, in vim use the command :PluginInstall
+" plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'preservim/nerdcommenter'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " all plugins must be added before the following line
 call vundle#end()
@@ -30,8 +31,18 @@ set softtabstop=2
 
 " MAPPING
 
+" general
 let mapleader =' '
 map <C-n> :NERDTreeToggle<CR>
+
+" tmux
+let g:tmux_navigator_no_mappings = 1
+
+noremap <silent> <C-h> :<C-U>TmuxNavigateLeft<cr>
+noremap <silent> <C-j> :<C-U>TmuxNavigateDown<cr>
+noremap <silent> <C-k> :<C-U>TmuxNavigateUp<cr>
+noremap <silent> <C-l> :<C-U>TmuxNavigateRight<cr>
+noremap <silent> <C-P> :<C-U>TmuxNavigatePrevious<cr>
 
 " THEME
 
