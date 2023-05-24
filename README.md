@@ -26,4 +26,6 @@ can be configured with zshrc copied at the root `~/.zshrc`. Source after modific
 apt-get install tmux
 ```
 
-can be configured with tmux conf file copied at the root `~/.tmux.conf`. Source after modification.
+can be configured with tmux conf file copied at the root `cp tmux.conf ~/.tmux.conf`. Source after modification. It features:
+* pane switching between editor and multiplexer
+* $PWD memory when creating new window or panning
