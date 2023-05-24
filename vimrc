@@ -32,13 +32,15 @@ set softtabstop=2
 
 " MAPPING
 
-" general
+" nerdcommenter:
 let mapleader =' '
+# nerdtree:
 map <C-n> :NERDTreeToggle<CR>
 
 " tmux
 let g:tmux_navigator_no_mappings = 1
 
+" matching keybindings
 noremap <silent> <C-h> :<C-U>TmuxNavigateLeft<cr>
 noremap <silent> <C-k> :<C-U>TmuxNavigateDown<cr>
 noremap <silent> <C-j> :<C-U>TmuxNavigateUp<cr>

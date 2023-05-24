@@ -2,7 +2,7 @@
 
 ### installation
 
-`vimrc` is the vim configuration file can be copied at the root: `~/.vimrc`, all files needed by plugins and themes and stuffs must be installed in a vim directory, also at the root: `mkdir ~/.vim`
+`vimrc` is the vim configuration file can be copied at the root: `cp vimrc ~/.vimrc`, all files needed by plugins and themes and stuffs must be installed in a vim directory, also at the root: `mkdir ~/.vim`
 
 ### dependencies
 
@@ -12,11 +12,13 @@
 * [one-half-dark](https://github.com/sonph/onehalf): cute theme, some installation steps needed
 * [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator#installation): for smooth navigation between vim and tmux
 
+once Vundle is up and running, use `:PluginInstall` to install any plugin you added to your vimrc.
+
 ## oh-my-zsh
 
 [install here](https://ohmyz.sh/)
 
-can be configured with zshrc copied at the root `~/.zshrc`. Source after modification.
+can be configured with zshrc copied at the root `~/.zshrc`. Source after modification: `tmux source-file ~/.tmux.conf`
 
 ## tmux
 
