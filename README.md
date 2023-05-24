@@ -18,7 +18,7 @@ once Vundle is up and running, use `:PluginInstall` to install any plugin you ad
 
 [install here](https://ohmyz.sh/)
 
-can be configured with zshrc copied at the root `~/.zshrc`. Source after modification: `tmux source-file ~/.tmux.conf`
+can be configured with zshrc copied at the root `~/.zshrc`. Source after modification.
 
 ## tmux
 
@@ -26,6 +26,6 @@ can be configured with zshrc copied at the root `~/.zshrc`. Source after modific
 apt-get install tmux
 ```
 
-can be configured with tmux conf file copied at the root `cp tmux.conf ~/.tmux.conf`. Source after modification. It features:
+can be configured with tmux conf file copied at the root `cp tmux.conf ~/.tmux.conf`. Source after modification: `tmux source-file ~/.tmux.conf`. It features:
 * pane switching between editor and multiplexer
 * $PWD memory when creating new window or panning
