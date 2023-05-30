@@ -29,3 +29,4 @@ apt-get install tmux
 can be configured with tmux conf file copied at the root `cp tmux.conf ~/.tmux.conf`. Source after modification: `tmux source-file ~/.tmux.conf`. It features:
 * pane switching between editor and multiplexer
 * $PWD memory when creating new window or panning
+* common buffer and vim keybindings for copying/pasting, `sudo apt install xclip` is required
