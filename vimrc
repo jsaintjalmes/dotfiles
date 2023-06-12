@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'preservim/nerdcommenter'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'rhysd/vim-clang-format'
 
 " all plugins must be added before the following line
 call vundle#end()
