@@ -12,6 +12,7 @@
 * [one-half-dark](https://github.com/sonph/onehalf): cute theme, some installation steps needed
 * [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator#installation): for smooth navigation between vim and tmux
 * [clang-format](https://github.com/rhysd/vim-clang-format/tree/master): automatic code formatting through vim with clang-format for a maximal code homogeneity experience (installing `clang-format` is required, some file copying too)
+* [about whitespaces](https://vimawesome.com/plugin/better-whitespace)
 
 once Vundle is up and running, use `:PluginInstall` to install any plugin you added to your vimrc.
 

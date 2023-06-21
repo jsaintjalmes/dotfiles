@@ -13,6 +13,7 @@ Plugin 'preservim/nerdtree'
 Plugin 'preservim/nerdcommenter'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'rhysd/vim-clang-format'
+Plugin 'ntpeters/vim-better-whitespace'
 
 " all plugins must be added before the following line
 call vundle#end()
