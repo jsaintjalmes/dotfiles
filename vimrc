@@ -14,6 +14,9 @@ Plugin 'preservim/nerdcommenter'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'rust-lang/rust.vim'
+Plugin 'dense-analysis/ale'
+Plugin 'vim-airline/vim-airline'
 
 " all plugins must be added before the following line
 call vundle#end()
@@ -26,6 +29,8 @@ syntax on
 set number
 set showmatch
 
+let g:NERDCustomDelimiters = { 'c': { 'left': '//','right': '' } }
+
 " TABS
 
 set tabstop=2
@@ -34,15 +39,13 @@ set softtabstop=2
 
 " MAPPING
 
-" nerdcommenter:
+" general
 let mapleader =' '
-# nerdtree:
 map <C-n> :NERDTreeToggle<CR>
 
 " tmux
 let g:tmux_navigator_no_mappings = 1
 
-" matching keybindings
 noremap <silent> <C-h> :<C-U>TmuxNavigateLeft<cr>
 noremap <silent> <C-k> :<C-U>TmuxNavigateDown<cr>
 noremap <silent> <C-j> :<C-U>TmuxNavigateUp<cr>
@@ -54,3 +57,15 @@ noremap <silent> <C-P> :<C-U>TmuxNavigatePrevious<cr>
 Bundle 'sonph/onehalf', {'rtp': 'vim/'}
 colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
+
+" ALE
+
+" config
+let g:ale_set_highlights = 0
+
+" supported languages
+let g:ale_linters = {'rust': ['analyzer']}
+
+" mapping
+nmap gd :ALEGoToDefinition<CR>
+nmap gr :ALEFindReferences<CR>

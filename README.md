@@ -6,13 +6,21 @@
 
 ### dependencies
 
+tooling:
 * [vundle](https://github.com/VundleVim/Vundle.vim): plugin manager, which can be used to install the following plugins
 * [nerdtree](https://github.com/preservim/nerdtree): plugin, file system explorer, can be toggled with a map key (here, CTRL+'N')
 * [nerdcommenter](https://github.com/preservim/nerdcommenter): plugin for commenting more efficiently! Can be toggled using the masterkey set in the vimrc (here, ' '+'c'+' ')
-* [one-half-dark](https://github.com/sonph/onehalf): cute theme, some installation steps needed
 * [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator#installation): for smooth navigation between vim and tmux
-* [clang-format](https://github.com/rhysd/vim-clang-format/tree/master): automatic code formatting through vim with clang-format for a maximal code homogeneity experience (installing `clang-format` is required, some file copying too)
+
+aesthetics:
+* [one-half-dark](https://github.com/sonph/onehalf): cute theme, some installation steps needed
+* [airline](https://github.com/vim-airline/vim-airline): nice status bar which seems highly configurable, popular and works with ALE
+
+languages and syntax helpers:
+* [ALE](https://github.com/dense-analysis/ale): Language Server Protocol client for linting (syntax/semantics checking, useful with rust) and other things such as go-to-reference
 * [about whitespaces](https://vimawesome.com/plugin/better-whitespace)
+* [clang-format](https://github.com/rhysd/vim-clang-format/tree/master): automatic code formatting through vim with clang-format for a maximal code homogeneity experience (installing `clang-format` is required, some file copying too)
+* [rust-analyzer](https://rust-analyzer.github.io/): it does analyze rust and is compatible with ALE
 
 once Vundle is up and running, use `:PluginInstall` to install any plugin you added to your vimrc.
 
