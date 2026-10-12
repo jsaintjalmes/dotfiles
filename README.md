@@ -1,3 +1,13 @@
+## NEO vim
+
+forget about vim! neovim is way better. `init.lua` file is a work in progress. After installing nvim, it is to be copied here: `mkdir -p ~/.config/nvim && cp init.lua ~/.config/nvim/init.lua`. **Please note**, configuration depends on +0.10.x nvim version (0.12.x here).
+
+Includes:
+* Modern LSP and ADVANCED Rust analysis
+* Very nice theme, quite custom if you ask
+* Telescope, which is a great way to browse files when looking for something
+* All my great vim habits
+
 ## vim
 
 ### installation
